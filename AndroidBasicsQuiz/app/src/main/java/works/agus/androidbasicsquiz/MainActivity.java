@@ -27,7 +27,11 @@ public class MainActivity extends AppCompatActivity {
             numCorrectAnswers++;
         }
 
-        Toast toast = Toast.makeText(getApplicationContext(), "You got "+numCorrectAnswers+" out of 2 correct", Toast.LENGTH_SHORT);
+        if (isQ3Correct()) {
+            numCorrectAnswers++;
+        }
+
+        Toast toast = Toast.makeText(getApplicationContext(), "You got "+numCorrectAnswers+" out of 3 correct", Toast.LENGTH_SHORT);
         toast.show();
 
     }
@@ -53,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
             q2Answer = false;
             return q2Answer;
         }
+    }
+
+    private boolean isQ3Correct (){
+        RadioButton q3 = (RadioButton) findViewById(R.id.q3BResources);
+        return q3.isChecked();
     }
 
 }
