@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android Basics Quiz</string>
+    <string name="Question1">1. What is the simplest way to build this layout?</string>
+    <string name="Question2">2. You can change the colors of your widgets in the following ways</string>
+    <string name="Submit">Submit your answers</string>
+
+</resources>

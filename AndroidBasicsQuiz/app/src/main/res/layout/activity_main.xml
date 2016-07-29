@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="works.agus.androidbasicsquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/QuestionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Question1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="16dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@drawable/relativelayout"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                style="@style/QuestionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LinearLayout"
+                android:id="@+id/linearLayout"
+                android:checked="false"
+                android:elegantTextHeight="false"
+                android:foregroundTint="#607D8B"
+                android:singleLine="false"
+                android:drawableTint="#607D8B"
+                android:drawableTintMode="add"
+                android:backgroundTint="#607D8B"
+                />
+            <RadioButton
+                style="@style/QuestionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RelativeLayout"
+                android:id="@+id/relativeLayout"/>
+            <RadioButton
+                style="@style/QuestionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ScrollView"
+                android:id="@+id/scrollView"/>
+            <RadioButton
+                style="@style/QuestionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ImageView"
+                android:id="@+id/imageView"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="12dp"
+            android:text="@string/Question2"/>
+        <CheckBox
+            style="@style/QuestionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="activity.xml"
+            android:id="@+id/q2ALayout"/>
+        <CheckBox
+            style="@style/QuestionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="styles.xml"
+            android:id="@+id/q2BStyles"/>
+        <CheckBox
+            style="@style/QuestionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="strings.xml"
+            android:id="@+id/q2CStrings"/>
+        <CheckBox
+            style="@style/QuestionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dimens.xml"
+            android:id="@+id/q2Dimens"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#009688"
+            android:textColor="#FFFFFF"
+            android:text="@string/Submit"
+            android:id="@+id/Submit"
+            android:onClick="submit"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>
